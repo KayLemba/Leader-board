@@ -1,21 +1,42 @@
-const listscore = [
-  { name: 'Name', score: 100 },
-  { name: 'Name', score: 20 },
-  { name: 'Name', score: 50 },
-  { name: 'Name', score: 78 },
-  { name: 'Name', score: 125 },
-  { name: 'Name', score: 77 },
-  { name: 'Name', score: 42 },
-];
+const scores = document.querySelector('.scores');
+const apiEndPoint = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/';
+const idLink = 'kDrZYktyR5cMX3YovIoE/';
 
-const displayScores = () => {
-  const scoreBoardContainer = document.querySelector('#scores');
-  scoreBoardContainer.innerHTML = '';
-  listscore.forEach((user) => {
-    scoreBoardContainer.innerHTML += `<li>
-        <p>${user.name}: ${user.score}</p>
-        </li>`;
+let scoresArr = [];
+
+const gameScores = async () => {
+  const response = await fetch(`${apiEndPoint}${idLink}scores/`)
+    .then((res) => res.json())
+    .then((data) => data.result)
+    .catch(() => 'error');
+  return response;
+};
+
+const displayScoreList = () => {
+  gameScores().then((res) => {
+    if (typeof res === 'object') {
+      scoresArr = Array.from(res);
+      scores.innerHTML = '';
+      if (scoresArr.length > 0) {
+        scoresArr.forEach((score) => {
+          const scoresTemp = `<li><p>${score.user}: ${score.score}</p></li>`;
+          scores.innerHTML += scoresTemp;
+        });
+      }
+    }
   });
 };
 
-exports.displayScores = displayScores;
+const addScore = async (data) => {
+  await fetch(`${apiEndPoint}${idLink}scores/`, {
+    method: 'POST',
+    body: JSON.stringify(data),
+    headers: {
+      'Content-type': 'application/json',
+    },
+  }).then((response) => response.json());
+};
+
+exports.displayScoreList = displayScoreList;
+exports.gameScores = gameScores;
+exports.addScore = addScore;
