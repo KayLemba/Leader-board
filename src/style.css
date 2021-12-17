@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&display=swap");
 
 body {
   margin: 0;
@@ -23,9 +23,7 @@ body {
 .ul {
   border-radius: 20px;
   background: linear-gradient(225deg, rgb(31, 175, 31), #6b6883);
-  box-shadow:
-    -28px 28px 56px #86b4a7,
-    28px -28px 56px #c6f1df;
+  box-shadow: -28px 28px 56px #86b4a7, 28px -28px 56px #c6f1df;
 }
 
 .main-container {
@@ -61,9 +59,9 @@ input {
 
 .recent-scores {
   font-family: Comfortaa;
-  font-size: medium;
+  font-size: 20px;
   font-weight: 900;
-  color:rgb(35, 182, 35);
+  color: rgb(35, 182, 35);
   height: 22px;
 }
 
@@ -76,9 +74,7 @@ input {
   background: #e8e8e8;
   border: 1px solid rgb(45, 238, 45);
   transition: all 0.3s;
-  box-shadow:
-    6px 6px 12px rgb(118, 243, 118),
-    -6px -6px 12px rgb(122, 221, 122);
+  box-shadow: 6px 6px 12px rgb(118, 243, 118), -6px -6px 12px rgb(122, 221, 122);
 }
 
 .scores {
