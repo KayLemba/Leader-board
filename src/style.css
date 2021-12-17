@@ -1,7 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&display=swap');
+
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background: rgb(1, 1, 5);
+  /* background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(9, 117, 121, 1) 70%, rgba(0, 212, 255, 1) 100%); */
+}
+
+.header {
+  position: relative;
+  left: 14%;
+  font-family: Comfortaa;
+  font-size: Bolder;
+  color: rgb(45, 238, 45);
 }
 
 .d-flex {
@@ -9,7 +21,11 @@ body {
 }
 
 .ul {
-  border: 2px solid black;
+  border-radius: 20px;
+  background: linear-gradient(225deg, rgb(31, 175, 31), #6b6883);
+  box-shadow:
+    -28px 28px 56px #86b4a7,
+    28px -28px 56px #c6f1df;
 }
 
 .main-container {
@@ -33,10 +49,36 @@ body {
 
 input {
   padding: 5px;
+  border-radius: 10px;
+  border: 1px solid rgb(45, 238, 45);
+}
+
+#refresh {
+  border-radius: 0.5em;
+  border: 1px solid rgb(45, 238, 45);
+  color: green;
+}
+
+.recent-scores {
+  font-family: Comfortaa;
+  font-size: medium;
+  font-weight: 900;
+  color:rgb(35, 182, 35);
+  height: 22px;
 }
 
 .submit {
   align-self: flex-end;
+  color: rgb(35, 180, 35);
+  padding: 0.7em 1.7em;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: #e8e8e8;
+  border: 1px solid rgb(45, 238, 45);
+  transition: all 0.3s;
+  box-shadow:
+    6px 6px 12px rgb(118, 243, 118),
+    -6px -6px 12px rgb(122, 221, 122);
 }
 
 .scores {
