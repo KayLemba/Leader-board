@@ -5,14 +5,13 @@ body {
   padding: 0;
   box-sizing: border-box;
   background: rgb(1, 1, 5);
-  /* background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(9, 117, 121, 1) 70%, rgba(0, 212, 255, 1) 100%); */
 }
 
 .header {
   position: relative;
   left: 14%;
-  font-family: Comfortaa;
-  font-size: Bolder;
+  font-family: Comfortaa, sans-serif;
+  font-weight: 900;
   color: rgb(45, 238, 45);
 }
 
@@ -58,7 +57,7 @@ input {
 }
 
 .recent-scores {
-  font-family: Comfortaa;
+  font-family: Comfortaa, sans-serif;
   font-size: 20px;
   font-weight: 900;
   color: rgb(35, 182, 35);
