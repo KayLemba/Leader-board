@@ -5,9 +5,9 @@
 
 # WORK FLOW SCREEN 
 ## SCREEN SHOT
-![screenshot](./leaderboard.png)
+![screenshot](./images/leaderboard.png)
 ## Live Demo
-[Click Here to view live version](Coming soon!!!)
+[Click Here to view live version]( https://kaylemba.github.io/Leader-board/dist/)
 ## Built With
 ### Major languages
 - HTML
@@ -18,6 +18,7 @@
 - Github
 - Git
 - Visual Studio Code
+- Webpack
 
 ## Getting Started
 *Instructions on how to access my project locally.**
