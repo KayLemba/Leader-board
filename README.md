@@ -7,7 +7,7 @@
 ## SCREEN SHOT
 ![screenshot](./images/final.png)
 ## Live Demo
-[Click Here to view live version]( https://blissful-ramanujan-a185a7.netlify.app/)
+[Click Here to view live version]( https://naughty-rosalind-58be10.netlify.app/)
 ## Built With
 ### Major languages
 - HTML
